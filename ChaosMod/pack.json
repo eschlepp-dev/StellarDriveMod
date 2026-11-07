@@ -1,0 +1,26 @@
+{
+  "id": "chaosmod.plants",
+  "name": "Chaos Plants",
+  "version": "1.0.0",
+  "parts": [
+    {
+      "id": 1200,
+      "asset": "PottedPlant",
+      "label": "Potted plant",
+      "description": "A bit of green for your ship.",
+      "buildMenuAfter": "StorageChest",
+      "donor": "StorageChest",
+      "state": "StorageChestState",
+      "behaviour": "chaosmod.plant",
+      "menu": "config",
+      "config":{"water":1.0, "mode": 0},
+      "mass": 4,
+      "icon": "icons/plant.png",
+      "visual": {
+        "meshes": [
+          { "resource": "models/plant.obj", "material": "PartMetal", "color": [0.35, 0.75, 0.4] }
+        ]
+      }
+    }
+  ]
+}
